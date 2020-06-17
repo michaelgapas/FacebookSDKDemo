@@ -3,18 +3,23 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		BA2445FE2498E88300F2598A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA2445FD2498E88300F2598A /* AppDelegate.swift */; };
 		BA2446002498E88300F2598A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA2445FF2498E88300F2598A /* SceneDelegate.swift */; };
-		BA2446022498E88300F2598A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA2446012498E88300F2598A /* ViewController.swift */; };
 		BA2446052498E88300F2598A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BA2446032498E88300F2598A /* Main.storyboard */; };
 		BA2446072498E88400F2598A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BA2446062498E88400F2598A /* Assets.xcassets */; };
 		BA24460A2498E88400F2598A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BA2446082498E88400F2598A /* LaunchScreen.storyboard */; };
 		BA2446152498E88500F2598A /* FacebookSDKDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA2446142498E88500F2598A /* FacebookSDKDemoTests.swift */; };
 		BA2446202498E88500F2598A /* FacebookSDKDemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA24461F2498E88500F2598A /* FacebookSDKDemoUITests.swift */; };
+		BA24462F2498EE0D00F2598A /* FacebookShare in Frameworks */ = {isa = PBXBuildFile; productRef = BA24462E2498EE0D00F2598A /* FacebookShare */; };
+		BA2446312498EE0D00F2598A /* FacebookCore in Frameworks */ = {isa = PBXBuildFile; productRef = BA2446302498EE0D00F2598A /* FacebookCore */; };
+		BA2446332498EE0D00F2598A /* FacebookGamingServices in Frameworks */ = {isa = PBXBuildFile; productRef = BA2446322498EE0D00F2598A /* FacebookGamingServices */; };
+		BA2446352498EE0D00F2598A /* FacebookLogin in Frameworks */ = {isa = PBXBuildFile; productRef = BA2446342498EE0D00F2598A /* FacebookLogin */; };
+		BA2446382498F3FF00F2598A /* FBLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA2446372498F3FF00F2598A /* FBLoginViewController.swift */; };
+		BA24463B2498F4FF00F2598A /* FBLoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA24463A2498F4FF00F2598A /* FBLoginViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,7 +43,6 @@
 		BA2445FA2498E88300F2598A /* FacebookSDKDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FacebookSDKDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BA2445FD2498E88300F2598A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BA2445FF2498E88300F2598A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		BA2446012498E88300F2598A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		BA2446042498E88300F2598A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		BA2446062498E88400F2598A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BA2446092498E88400F2598A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -49,6 +53,8 @@
 		BA24461B2498E88500F2598A /* FacebookSDKDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FacebookSDKDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BA24461F2498E88500F2598A /* FacebookSDKDemoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FacebookSDKDemoUITests.swift; sourceTree = "<group>"; };
 		BA2446212498E88500F2598A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BA2446372498F3FF00F2598A /* FBLoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FBLoginViewController.swift; sourceTree = "<group>"; };
+		BA24463A2498F4FF00F2598A /* FBLoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FBLoginViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +62,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BA2446352498EE0D00F2598A /* FacebookLogin in Frameworks */,
+				BA2446332498EE0D00F2598A /* FacebookGamingServices in Frameworks */,
+				BA24462F2498EE0D00F2598A /* FacebookShare in Frameworks */,
+				BA2446312498EE0D00F2598A /* FacebookCore in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -99,9 +109,9 @@
 		BA2445FC2498E88300F2598A /* FacebookSDKDemo */ = {
 			isa = PBXGroup;
 			children = (
+				BA2446362498F3DF00F2598A /* FacebookLogin */,
 				BA2445FD2498E88300F2598A /* AppDelegate.swift */,
 				BA2445FF2498E88300F2598A /* SceneDelegate.swift */,
-				BA2446012498E88300F2598A /* ViewController.swift */,
 				BA2446032498E88300F2598A /* Main.storyboard */,
 				BA2446062498E88400F2598A /* Assets.xcassets */,
 				BA2446082498E88400F2598A /* LaunchScreen.storyboard */,
@@ -128,6 +138,23 @@
 			path = FacebookSDKDemoUITests;
 			sourceTree = "<group>";
 		};
+		BA2446362498F3DF00F2598A /* FacebookLogin */ = {
+			isa = PBXGroup;
+			children = (
+				BA2446392498F4E500F2598A /* ViewModel */,
+				BA2446372498F3FF00F2598A /* FBLoginViewController.swift */,
+			);
+			path = FacebookLogin;
+			sourceTree = "<group>";
+		};
+		BA2446392498F4E500F2598A /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				BA24463A2498F4FF00F2598A /* FBLoginViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -144,6 +171,12 @@
 			dependencies = (
 			);
 			name = FacebookSDKDemo;
+			packageProductDependencies = (
+				BA24462E2498EE0D00F2598A /* FacebookShare */,
+				BA2446302498EE0D00F2598A /* FacebookCore */,
+				BA2446322498EE0D00F2598A /* FacebookGamingServices */,
+				BA2446342498EE0D00F2598A /* FacebookLogin */,
+			);
 			productName = FacebookSDKDemo;
 			productReference = BA2445FA2498E88300F2598A /* FacebookSDKDemo.app */;
 			productType = "com.apple.product-type.application";
@@ -216,6 +249,9 @@
 				Base,
 			);
 			mainGroup = BA2445F12498E88300F2598A;
+			packageReferences = (
+				BA24462D2498EE0D00F2598A /* XCRemoteSwiftPackageReference "facebook-ios-sdk" */,
+			);
 			productRefGroup = BA2445FB2498E88300F2598A /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -259,8 +295,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BA2446022498E88300F2598A /* ViewController.swift in Sources */,
 				BA2445FE2498E88300F2598A /* AppDelegate.swift in Sources */,
+				BA24463B2498F4FF00F2598A /* FBLoginViewModel.swift in Sources */,
+				BA2446382498F3FF00F2598A /* FBLoginViewController.swift in Sources */,
 				BA2446002498E88300F2598A /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -590,6 +627,40 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		BA24462D2498EE0D00F2598A /* XCRemoteSwiftPackageReference "facebook-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/facebook/facebook-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 7.0.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		BA24462E2498EE0D00F2598A /* FacebookShare */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = BA24462D2498EE0D00F2598A /* XCRemoteSwiftPackageReference "facebook-ios-sdk" */;
+			productName = FacebookShare;
+		};
+		BA2446302498EE0D00F2598A /* FacebookCore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = BA24462D2498EE0D00F2598A /* XCRemoteSwiftPackageReference "facebook-ios-sdk" */;
+			productName = FacebookCore;
+		};
+		BA2446322498EE0D00F2598A /* FacebookGamingServices */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = BA24462D2498EE0D00F2598A /* XCRemoteSwiftPackageReference "facebook-ios-sdk" */;
+			productName = FacebookGamingServices;
+		};
+		BA2446342498EE0D00F2598A /* FacebookLogin */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = BA24462D2498EE0D00F2598A /* XCRemoteSwiftPackageReference "facebook-ios-sdk" */;
+			productName = FacebookLogin;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = BA2445F22498E88300F2598A /* Project object */;
 }
